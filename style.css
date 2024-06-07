@@ -1,11 +1,19 @@
 * {
+    transition: background 0.3s ease-in-out;
+}
+
+h1, h2, h3, li, td, a {
     font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    color: #111;
     text-decoration: none;
 }
 
-body {
+body.dark {
     background-color: #222;
+}
+
+body.light {
+    background-color: #ddd;
 }
 
 ::-webkit-scrollbar {
@@ -22,11 +30,18 @@ main {
     position :fixed;
     width: 60px;
     height: calc(100vh - 60px);
-    bottom: 0;
+    top: 60px;
     right: 0;
-    background-color: #333;
-    transition: all 0.3s ease-in-out;
     z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+.tr-aside.dark {
+    background-color: #333;
+}
+
+.tr-aside.light {
+    background-color: #ccc;
 }
 
 .tr-aside table {
@@ -41,21 +56,39 @@ main {
     padding: 8px;
 }
 
-.tr-toggle {
+.tr-toggle.dark {
     position: fixed;
     top: 0;
     right: 0;
     width: 60px;
     height: 60px;
-    background-color: #444;
-    background-image: url(./images/translate.png);
+    background-image: url(./images/translate-dark.png);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #444;
 }
 
-.tr-toggle-on:hover {
+.tr-toggle.light {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/translate-light.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #bbb;
+}
+
+.tr-toggle-on.dark:hover {
     background-color: #666;
+    cursor: pointer;
+}
+
+.tr-toggle-on.light:hover {
+    background-color: #aaa;
     cursor: pointer;
 }
 
@@ -63,13 +96,21 @@ main {
 .nav-aside {
     position :fixed;
     width: 60px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 120px);
     bottom: 0;
     left: 0;
-    background-color: #333;
-    transition: all 0.3s ease-in-out;
     z-index: 999;
+    transition: all 0.3s ease-in-out;
 }
+
+.nav-aside.dark {
+    background-color: #333;
+}
+
+.nav-aside.light {
+    background-color: #ccc;
+}
+
 
 .nav-aside ul {
     white-space: nowrap;
@@ -78,23 +119,79 @@ main {
     margin-top: 30px;
 }
 
-.nav-toggle {
+.nav-toggle.dark {
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     width: 60px;
     height: 60px;
-    background-color: #444;
-    background-image: url(./images/menu.jpg);
+    background-image: url(./images/menu-dark.jpg);
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #444;
 }
 
-.nav-toggle:hover {
+.nav-toggle.light {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/menu-light.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #bbb;
+}
+
+.nav-toggle.dark:hover {
     background-color: #666;
     cursor: pointer;
 }
+
+.nav-toggle.light:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+/* toggle dark mode/light mode */
+.md-toggle.dark {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/light-mode.png);
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #444;
+}
+
+.md-toggle.light {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(./images/dark-mode.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #bbb;
+}
+
+.md-toggle.dark:hover {
+    background-color: #666;
+    cursor: pointer;
+}
+
+.md-toggle.light:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
 
 /* texts and stuffs */
 .hr-par {
