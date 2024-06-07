@@ -2,18 +2,18 @@
     transition: background 0.3s ease-in-out;
 }
 
-h1, h2, h3, li, td, a {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #111;
-    text-decoration: none;
-}
-
 body.dark {
     background-color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+    text-decoration: none;
 }
 
 body.light {
     background-color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -216,4 +216,10 @@ main {
 
 .hl {
     font-weight: bold;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    text-decoration: none;
 }
