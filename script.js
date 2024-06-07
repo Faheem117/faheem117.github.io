@@ -48,8 +48,9 @@ navToggle.addEventListener("click", () => {
 
 //light mode/dark mode
 let body = document.querySelector("body");
-let text = document.querySelectorAll("h1, h2, h3, li, td, a");
+let text = document.querySelectorAll("h1, h2, h3, h4, li, td, a");
 let hr = document.querySelectorAll("hr");
+let anc = document.querySelectorAll("a");
 
 mdToggle.addEventListener("click", () => {
         if (modeStatus == "dark") {
@@ -59,8 +60,8 @@ mdToggle.addEventListener("click", () => {
             navToggle.classList.replace("dark", "light");
             navAside.classList.replace("dark", "light");
             mdToggle.classList.replace("dark", "light");
-            text.forEach(a => {a.style.color = "#111";});
             hr.forEach(a => {a.style.backgroundColor = "#111";});
+            anc.forEach(a => {a.style.color = "#111";});
             modeStatus = "light";
         } else {
             body.classList.replace("light", "dark");
@@ -69,8 +70,8 @@ mdToggle.addEventListener("click", () => {
             navToggle.classList.replace("light", "dark");
             navAside.classList.replace("light", "dark");
             mdToggle.classList.replace("light", "dark");
-            text.forEach(a => {a.style.color = "#eee";});
             hr.forEach(a => {a.style.backgroundColor = "#eee";});
+            anc.forEach(a => {a.style.color = "#eee";});
             modeStatus = "dark";
         }
 })
