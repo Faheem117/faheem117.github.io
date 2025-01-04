@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="turn">X's turn</div>
+    <main>
+        <div class="game-a1 game">
+            <ul>
+                <li><div class="game-a1-box-a1 box box-a1 game-a1-box"></div></li>
+                <li><div class="game-a1-box-b1 box box-b1 game-a1-box"></div></li>
+                <li><div class="game-a1-box-c1 box box-c1 game-a1-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-a1-box-a2 box box-a2 game-a1-box"></div></li>
+                <li><div class="game-a1-box-b2 box box-b2 game-a1-box"></div></li>
+                <li><div class="game-a1-box-c2 box box-c2 game-a1-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-a1-box-a3 box box-a3 game-a1-box"></div></li>
+                <li><div class="game-a1-box-b3 box box-b3 game-a1-box"></div></li>
+                <li><div class="game-a1-box-c3 box box-c3 game-a1-box"></div></li>
+            </ul>
+            <div class="stripes">
+                <div class="stripe stripe-h stripe-a1-a1a3 stripe-a1a3"></div>
+                <div class="stripe stripe-h stripe-a1-b1b3 stripe-b1b3"></div>
+                <div class="stripe stripe-h stripe-a1-c1c3 stripe-c1c3"></div>
+                <div class="stripe stripe-v stripe-a1-a1c1 stripe-a1c1"></div>
+                <div class="stripe stripe-v stripe-a1-a2c2 stripe-a2c2"></div>
+                <div class="stripe stripe-v stripe-a1-a3c3 stripe-a3c3"></div>
+                <div class="stripe stripe-dm stripe-a1-a1c3 stripe-a1c3"></div>
+                <div class="stripe stripe-dp stripe-a1-a3c1 stripe-a3c1"></div>
+            </div>
+            <div class="cover cover-a1"></div>
+        </div>
+        <div class="game-a2 game">
+            <ul>
+                <li><div class="game-a2-box-a1 box box-a1 game-a2-box"></div></li>
+                <li><div class="game-a2-box-b1 box box-b1 game-a2-box"></div></li>
+                <li><div class="game-a2-box-c1 box box-c1 game-a2-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-a2-box-a2 box box-a2 game-a2-box"></div></li>
+                <li><div class="game-a2-box-b2 box box-b2 game-a2-box"></div></li>
+                <li><div class="game-a2-box-c2 box box-c2 game-a2-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-a2-box-a3 box box-a3 game-a2-box"></div></li>
+                <li><div class="game-a2-box-b3 box box-b3 game-a2-box"></div></li>
+                <li><div class="game-a2-box-c3 box box-c3 game-a2-box"></div></li>
+            </ul>
+            <div class="stripes">
+                <div class="stripe stripe-h stripe-a2-a1a3 stripe-a1a3"></div>
+                <div class="stripe stripe-h stripe-a2-b1b3 stripe-b1b3"></div>
+                <div class="stripe stripe-h stripe-a2-c1c3 stripe-c1c3"></div>
+                <div class="stripe stripe-v stripe-a2-a1c1 stripe-a1c1"></div>
+                <div class="stripe stripe-v stripe-a2-a2c2 stripe-a2c2"></div>
+                <div class="stripe stripe-v stripe-a2-a3c3 stripe-a3c3"></div>
+                <div class="stripe stripe-dm stripe-a2-a1c3 stripe-a1c3"></div>
+                <div class="stripe stripe-dp stripe-a2-a3c1 stripe-a3c1"></div>
+            </div>
+            <div class="cover cover-a2"></div>
+        </div>
+        <div class="game-a3 game">
+            <ul>
+                <li><div class="game-a3-box-a1 box box-a1 game-a3-box"></div></li>
+                <li><div class="game-a3-box-b1 box box-b1 game-a3-box"></div></li>
+                <li><div class="game-a3-box-c1 box box-c1 game-a3-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-a3-box-a2 box box-a2 game-a3-box"></div></li>
+                <li><div class="game-a3-box-b2 box box-b2 game-a3-box"></div></li>
+                <li><div class="game-a3-box-c2 box box-c2 game-a3-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-a3-box-a3 box box-a3 game-a3-box"></div></li>
+                <li><div class="game-a3-box-b3 box box-b3 game-a3-box"></div></li>
+                <li><div class="game-a3-box-c3 box box-c3 game-a3-box"></div></li>
+            </ul>
+            <div class="stripes">
+                <div class="stripe stripe-h stripe-a3-a1a3 stripe-a1a3"></div>
+                <div class="stripe stripe-h stripe-a3-b1b3 stripe-b1b3"></div>
+                <div class="stripe stripe-h stripe-a3-c1c3 stripe-c1c3"></div>
+                <div class="stripe stripe-v stripe-a3-a1c1 stripe-a1c1"></div>
+                <div class="stripe stripe-v stripe-a3-a2c2 stripe-a2c2"></div>
+                <div class="stripe stripe-v stripe-a3-a3c3 stripe-a3c3"></div>
+                <div class="stripe stripe-dm stripe-a3-a1c3 stripe-a1c3"></div>
+                <div class="stripe stripe-dp stripe-a3-a3c1 stripe-a3c1"></div>
+            </div>
+            <div class="cover cover-a3"></div>
+        </div>
+        <div class="game-b1 game">
+            <ul>
+                <li><div class="game-b1-box-a1 box box-a1 game-b1-box"></div></li>
+                <li><div class="game-b1-box-b1 box box-b1 game-b1-box"></div></li>
+                <li><div class="game-b1-box-c1 box box-c1 game-b1-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-b1-box-a2 box box-a2 game-b1-box"></div></li>
+                <li><div class="game-b1-box-b2 box box-b2 game-b1-box"></div></li>
+                <li><div class="game-b1-box-c2 box box-c2 game-b1-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-b1-box-a3 box box-a3 game-b1-box"></div></li>
+                <li><div class="game-b1-box-b3 box box-b3 game-b1-box"></div></li>
+                <li><div class="game-b1-box-c3 box box-c3 game-b1-box"></div></li>
+            </ul>
+            <div class="stripes">
+                <div class="stripe stripe-h stripe-b1-a1a3 stripe-a1a3"></div>
+                <div class="stripe stripe-h stripe-b1-b1b3 stripe-b1b3"></div>
+                <div class="stripe stripe-h stripe-b1-c1c3 stripe-c1c3"></div>
+                <div class="stripe stripe-v stripe-b1-a1c1 stripe-a1c1"></div>
+                <div class="stripe stripe-v stripe-b1-a2c2 stripe-a2c2"></div>
+                <div class="stripe stripe-v stripe-b1-a3c3 stripe-a3c3"></div>
+                <div class="stripe stripe-dm stripe-b1-a1c3 stripe-a1c3"></div>
+                <div class="stripe stripe-dp stripe-b1-a3c1 stripe-a3c1"></div>
+            </div>
+            <div class="cover cover-b1"></div>
+        </div>
+        <div class="game-b2 game">
+            <ul>
+                <li><div class="game-b2-box-a1 box box-a1 game-b2-box"></div></li>
+                <li><div class="game-b2-box-b1 box box-b1 game-b2-box"></div></li>
+                <li><div class="game-b2-box-c1 box box-c1 game-b2-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-b2-box-a2 box box-a2 game-b2-box"></div></li>
+                <li><div class="game-b2-box-b2 box box-b2 game-b2-box"></div></li>
+                <li><div class="game-b2-box-c2 box box-c2 game-b2-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-b2-box-a3 box box-a3 game-b2-box"></div></li>
+                <li><div class="game-b2-box-b3 box box-b3 game-b2-box"></div></li>
+                <li><div class="game-b2-box-c3 box box-c3 game-b2-box"></div></li>
+            </ul>
+            <div class="stripes">
+                <div class="stripe stripe-h stripe-b2-a1a3 stripe-a1a3"></div>
+                <div class="stripe stripe-h stripe-b2-b1b3 stripe-b1b3"></div>
+                <div class="stripe stripe-h stripe-b2-c1c3 stripe-c1c3"></div>
+                <div class="stripe stripe-v stripe-b2-a1c1 stripe-a1c1"></div>
+                <div class="stripe stripe-v stripe-b2-a2c2 stripe-a2c2"></div>
+                <div class="stripe stripe-v stripe-b2-a3c3 stripe-a3c3"></div>
+                <div class="stripe stripe-dm stripe-b2-a1c3 stripe-a1c3"></div>
+                <div class="stripe stripe-dp stripe-b2-a3c1 stripe-a3c1"></div>
+            </div>
+            <div class="cover cover-b2"></div>
+        </div>
+        <div class="game-b3 game">
+            <ul>
+                <li><div class="game-b3-box-a1 box box-a1 game-b3-box"></div></li>
+                <li><div class="game-b3-box-b1 box box-b1 game-b3-box"></div></li>
+                <li><div class="game-b3-box-c1 box box-c1 game-b3-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-b3-box-a2 box box-a2 game-b3-box"></div></li>
+                <li><div class="game-b3-box-b2 box box-b2 game-b3-box"></div></li>
+                <li><div class="game-b3-box-c2 box box-c2 game-b3-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-b3-box-a3 box box-a3 game-b3-box"></div></li>
+                <li><div class="game-b3-box-b3 box box-b3 game-b3-box"></div></li>
+                <li><div class="game-b3-box-c3 box box-c3 game-b3-box"></div></li>
+            </ul>
+            <div class="stripes">
+                <div class="stripe stripe-h stripe-b3-a1a3 stripe-a1a3"></div>
+                <div class="stripe stripe-h stripe-b3-b1b3 stripe-b1b3"></div>
+                <div class="stripe stripe-h stripe-b3-c1c3 stripe-c1c3"></div>
+                <div class="stripe stripe-v stripe-b3-a1c1 stripe-a1c1"></div>
+                <div class="stripe stripe-v stripe-b3-a2c2 stripe-a2c2"></div>
+                <div class="stripe stripe-v stripe-b3-a3c3 stripe-a3c3"></div>
+                <div class="stripe stripe-dm stripe-b3-a1c3 stripe-a1c3"></div>
+                <div class="stripe stripe-dp stripe-b3-a3c1 stripe-a3c1"></div>
+            </div>
+            <div class="cover cover-b3"></div>
+        </div>
+        <div class="game-c1 game">
+            <ul>
+                <li><div class="game-c1-box-a1 box box-a1 game-c1-box"></div></li>
+                <li><div class="game-c1-box-b1 box box-b1 game-c1-box"></div></li>
+                <li><div class="game-c1-box-c1 box box-c1 game-c1-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-c1-box-a2 box box-a2 game-c1-box"></div></li>
+                <li><div class="game-c1-box-b2 box box-b2 game-c1-box"></div></li>
+                <li><div class="game-c1-box-c2 box box-c2 game-c1-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-c1-box-a3 box box-a3 game-c1-box"></div></li>
+                <li><div class="game-c1-box-b3 box box-b3 game-c1-box"></div></li>
+                <li><div class="game-c1-box-c3 box box-c3 game-c1-box"></div></li>
+            </ul>
+            <div class="stripes">
+                <div class="stripe stripe-h stripe-c1-a1a3 stripe-a1a3"></div>
+                <div class="stripe stripe-h stripe-c1-b1b3 stripe-b1b3"></div>
+                <div class="stripe stripe-h stripe-c1-c1c3 stripe-c1c3"></div>
+                <div class="stripe stripe-v stripe-c1-a1c1 stripe-a1c1"></div>
+                <div class="stripe stripe-v stripe-c1-a2c2 stripe-a2c2"></div>
+                <div class="stripe stripe-v stripe-c1-a3c3 stripe-a3c3"></div>
+                <div class="stripe stripe-dm stripe-c1-a1c3 stripe-a1c3"></div>
+                <div class="stripe stripe-dp stripe-c1-a3c1 stripe-a3c1"></div>
+            </div>
+            <div class="cover cover-c1"></div>
+        </div>
+        <div class="game-c2 game">
+            <ul>
+                <li><div class="game-c2-box-a1 box box-a1 game-c2-box"></div></li>
+                <li><div class="game-c2-box-b1 box box-b1 game-c2-box"></div></li>
+                <li><div class="game-c2-box-c1 box box-c1 game-c2-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-c2-box-a2 box box-a2 game-c2-box"></div></li>
+                <li><div class="game-c2-box-b2 box box-b2 game-c2-box"></div></li>
+                <li><div class="game-c2-box-c2 box box-c2 game-c2-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-c2-box-a3 box box-a3 game-c2-box"></div></li>
+                <li><div class="game-c2-box-b3 box box-b3 game-c2-box"></div></li>
+                <li><div class="game-c2-box-c3 box box-c3 game-c2-box"></div></li>
+            </ul>
+            <div class="stripes">
+                <div class="stripe stripe-h stripe-c2-a1a3 stripe-a1a3"></div>
+                <div class="stripe stripe-h stripe-c2-b1b3 stripe-b1b3"></div>
+                <div class="stripe stripe-h stripe-c2-c1c3 stripe-c1c3"></div>
+                <div class="stripe stripe-v stripe-c2-a1c1 stripe-a1c1"></div>
+                <div class="stripe stripe-v stripe-c2-a2c2 stripe-a2c2"></div>
+                <div class="stripe stripe-v stripe-c2-a3c3 stripe-a3c3"></div>
+                <div class="stripe stripe-dm stripe-c2-a1c3 stripe-a1c3"></div>
+                <div class="stripe stripe-dp stripe-c2-a3c1 stripe-a3c1"></div>
+            </div>
+            <div class="cover cover-c2"></div>
+        </div>
+        <div class="game-c3 game">
+            <ul>
+                <li><div class="game-c3-box-a1 box box-a1 game-c3-box"></div></li>
+                <li><div class="game-c3-box-b1 box box-b1 game-c3-box"></div></li>
+                <li><div class="game-c3-box-c1 box box-c1 game-c3-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-c3-box-a2 box box-a2 game-c3-box"></div></li>
+                <li><div class="game-c3-box-b2 box box-b2 game-c3-box"></div></li>
+                <li><div class="game-c3-box-c2 box box-c2 game-c3-box"></div></li>
+            </ul>
+            <ul>
+                <li><div class="game-c3-box-a3 box box-a3 game-c3-box"></div></li>
+                <li><div class="game-c3-box-b3 box box-b3 game-c3-box"></div></li>
+                <li><div class="game-c3-box-c3 box box-c3 game-c3-box"></div></li>
+            </ul>
+            <div class="stripes">
+                <div class="stripe stripe-h stripe-c3-a1a3 stripe-a1a3"></div>
+                <div class="stripe stripe-h stripe-c3-b1b3 stripe-b1b3"></div>
+                <div class="stripe stripe-h stripe-c3-c1c3 stripe-c1c3"></div>
+                <div class="stripe stripe-v stripe-c3-a1c1 stripe-a1c1"></div>
+                <div class="stripe stripe-v stripe-c3-a2c2 stripe-a2c2"></div>
+                <div class="stripe stripe-v stripe-c3-a3c3 stripe-a3c3"></div>
+                <div class="stripe stripe-dm stripe-c3-a1c3 stripe-a1c3"></div>
+                <div class="stripe stripe-dp stripe-c3-a3c1 stripe-a3c1"></div>
+            </div>
+            <div class="cover cover-c3"></div>
+        </div>
+        <div class="stripes-end">
+            <div class="stripe-end stripe-h-end stripe-a1a3-end"></div>
+            <div class="stripe-end stripe-h-end stripe-b1b3-end"></div>
+            <div class="stripe-end stripe-h-end stripe-c1c3-end"></div>
+            <div class="stripe-end stripe-v-end stripe-a1c1-end"></div>
+            <div class="stripe-end stripe-v-end stripe-a2c2-end"></div>
+            <div class="stripe-end stripe-v-end stripe-a3c3-end"></div>
+            <div class="stripe-end stripe-dm-end stripe-a1c3-end"></div>
+            <div class="stripe-end stripe-dp-end stripe-a3c1-end"></div>
+        </div>
+    </main>
+    <div class="btn-rules">Rules</div>
+    <div class="ann"></div>
+    <div class="box-rules">
+        <div class="ttl-rules">RULES</div>
+        <ul class="text-rules">
+            <li>The first player can play in any of these 81 spaces</li>
+            <li>The next player must play in the game whose location corresponds to the square chosen in the previous move</li>
+            <li>When someone gets 3 in a row in one of the games, that entire square is marked for them</li>
+            <li>If a player is ever forced to play in a game that is already been won, well they can't, and instead they get to choose to play anywhere</li>
+            <li>If a small game draws, it remains un-earned (neither an X nor an O is placed over it)</li>
+            <li>If the entire game ends with a draw, the player who won the most small games wins the entire game</li>
+            <li>Play continues until someone wins 3 games that are in a row</li>
+        </ul>
+        <div class="back-rules">Back</div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
